@@ -34,6 +34,7 @@ abline(simp)
 summary.lm(simp)
 ```
 
+WEIGHT CHART
 
 ```{r}
 simp <- lm(LENGTH~WEIGHT,data=bears)
