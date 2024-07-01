@@ -26,7 +26,46 @@ plot(LENGTH~NECK,data=bears)
 abline(simp)
 summary.lm(simp)
 ```
+CHEST CHART
+```{r}
+simp <- lm(LENGTH~CHEST,data=bears)
+plot(LENGTH~CHEST,data=bears)
+abline(simp)
+summary.lm(simp)
+```
 
+
+```{r}
+simp <- lm(LENGTH~WEIGHT,data=bears)
+plot(LENGTH~WEIGHT,data=bears)
+abline(simp)
+summary.lm(simp)
+```
+
+```{r}
+simp <- lm(LENGTH~NECK,data=bears)
+plot(LENGTH~NECK,data=bears)
+abline(simp)
+summary.lm(simp)
+```
 
 ## Compare all models that predict LENGTH other than NECK. Then order them from worst to best by its value of Adjusted-Rsquared (bigger is better), or by RSE (residual standard error) where smaller is better. 
+
+The summary 
+These are ordered from best to worst:
+
+HEADLER: Adjusted R squared: 0.8434 RSE: 4.235
+
+chest: Ajusted R squared: 0.7869 RSE: 4.939
+
+weight: Adjusted R squared: 0.7423 RSE: 5.432
+
+Length: Adjusted R squared: 0.7476 RSE: 5.376
+
+HEADWTH: Adjusted R squared: 0.5321 RSE: 7.32 
+
+Age: Adjusted R squared: 0.5073 RSE 7.511
+
+
+
 
